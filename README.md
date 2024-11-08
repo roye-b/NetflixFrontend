@@ -33,3 +33,5 @@ Start the Netflix Frontend app by:
 ```bash
 npm start
 ```
+
+In your browser, visit `http://localhost:3000` to browse the app. 
