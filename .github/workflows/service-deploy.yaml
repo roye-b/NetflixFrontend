@@ -20,7 +20,7 @@ jobs:
       - name: Build and push image
         run: |
           echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
-          IMAGE_NAME=royeb/netflix_movie_catalog:${{ github.run_number }}
+          IMAGE_NAME=royeb/netflix-frontend:${{ github.run_number }}
           docker build -t $IMAGE_NAME .
           docker push $IMAGE_NAME
       - name: SSH to EC2 instance
